@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-: rgb(50, 50, 50);
+  --bg-: rgb(255, 255, 255);
+  --bg-icons: rgb(228, 228, 228);
+  --main-hover: rgb(255, 255, 255);
+  --bg-icons-hover: rgb(70, 70, 70);
+
+  font-size: clamp(60%, 1% + 1.5vw, 100%);
+}
+html.nature{
+  --main-: rgb(255, 255, 255);
+  --bg-: rgb(23, 54, 27);
+  --bg-icons: rgb(33, 76, 39);
+  --main-hover: rgb(33, 76, 39);
+  --bg-icons-hover: rgb(255, 255, 255);
+}
+html.rain{
+  --main-: rgb(255, 255, 255);
+  --bg-: rgb(29, 49, 67);
+  --bg-icons: rgb(20, 32, 42);
+  --main-hover: rgb(20, 32, 42);
+  --bg-icons-hover: rgb(255, 255, 255);
+}
+html.cafeteria{
+  --main-: #000000;
+  --bg-: 	#eedab5;
+  --bg-icons: #c2b295;
+  --main-hover: #c2b295;
+  --bg-icons-hover: #000000;
+}
+html.fire{
+  --main-: #ff2c0c;
+  --bg-: 	#151515;
+  --bg-icons: #262626;
+  --main-hover: #262626;
+  --bg-icons-hover: #ff3c00;
+}
+
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-);
+}
+
+.container{
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.part-one{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+  padding: 2vw;
+}
+
+.part-one .timer{
+  font-family: 'Roboto', Arial;
+  font-size: 9rem;
+  font-weight: 600;
+  color: var(--main-)
+}
+
+.part-one article{
+  display: flex;
+  justify-content: space-between;
+}
+
+.part-one article button{
+  font-size: 5rem;
+  color: var(--main-);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.part-two{
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin: auto;
+  padding: 2vw;
+}
+.part-two div{
+  display: grid;
+  grid-template-rows: 12rem 12rem;
+  grid-template-columns: 12rem 12rem;
+  gap: 2rem;
+}
+.part-two button{
+  font-size: 6rem;
+  color: var(--main-);
+  background-color: var(--bg-icons);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.part-two button:hover{
+  background-color: var(--bg-icons-hover);
+  color: var(--main-hover);
+}

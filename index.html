@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="src/main.js" type="module" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div class="container">
+    
+    <section class="part-one">
+      <div class="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <article class="controls">
+        <button class="ph ph-play-circle" data-action="toggleRunningY"></button>
+        <button class="ph ph-stop-circle" data-action="toggleRunningN"></button>
+        <button class="ph ph-plus-circle" data-action="plusTime"></button>
+        <button class="ph ph-minus-circle" data-action="minusTime"></button>
+      </article>
+    </section>
+
+    <section class="part-two">
+      <div>
+        <button class="ph ph-tree"></button>
+        <button class="ph ph-cloud-rain"></button>
+        <button class="ph ph-storefront"></button>
+        <button class="ph ph-fire"></button>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
